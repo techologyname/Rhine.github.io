@@ -1,0 +1,244 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+html, body {
+	height: 100%;
+}
+/*左侧边栏*/
+.left-sidebar, .header, nav-list h2, .hide h5 {
+	background-color: rgb(40, 45, 47);
+}
+
+.left-sidebar {
+	float: left;
+	width: 20%;
+	height: 100%;
+	padding-bottom: 55px;
+}
+
+.header {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	padding: 20px 0;
+}
+
+.nav {
+	margin: 10px 5px 5px;
+}
+
+.nav-list {
+	margin-bottom: 5px;
+}
+
+.nav-list h2 {
+	position: relative;
+	padding: 15px 0;
+	text-align: center;
+	font-size: 15px;
+	color: rgb(134, 142, 142);
+	transition: 0.7s;
+}
+
+.nav-list h2:hover {
+	background-color: rgb(35, 40, 41);
+	color: #fff;
+}
+
+.nav-list h2.on {
+	background-color: rgb(35, 40, 41);
+	color: #fff;
+}
+
+.nav-list i {
+	position: absolute;
+	right: 10px;
+	top: 15px;
+	border: 8px solid transparent;
+	border-left-color: #fff;
+	transform: rotate(0deg);
+	transform-origin: 1px 8px;
+	/*旋转基点*/
+	transition: 0.7s;
+}
+
+.nav-list i.on {
+	transform: rotate(90deg);
+}
+
+.hide {
+	overflow: hidden;
+	transition: 0.7s;
+}
+
+.hide h5 {
+	padding: 15px 0;
+	text-align: center;
+}
+
+.hide h5 a {
+	color: rgb(134, 142, 142);
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.hide h5 a:hover {
+	color: #fff;
+}
+/*右部分*/
+.right {
+	height: 100%;
+}
+/*右端导航*/
+.right-header {
+	float: left;
+	background-color: rgb(47, 54, 56);
+	width: 80%;
+	height: 55px;
+}
+/*右端正文*/
+.right-content {
+	float: left;
+	background-color: rgb(58, 65, 68);
+	width: 80%;
+	height: 100%;
+}
+
+.right-header .login {
+	text-align: right;
+}
+
+.right-header .login li {
+	line-height: 50px;
+	display: inline;
+	padding-right: 35px;
+}
+
+.right-header .login a {
+	text-decoration: none;
+	color: rgb(207, 207, 207);
+}
+
+.right-header .login a:hover {
+	color: #fff;
+}
+
+.right-content .info {
+	overflow: auto;
+	margin-top: 20px;
+	margin-left: 20px;
+	background: rgb(75, 83, 87);
+	float: left;
+	width: 95%;
+	height: 97%;
+}
+
+.right-content .info h3 {
+	color: #fff;
+	font-size: 15px;
+	padding-left: 17px;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	border-bottom: 1px solid rgb(63, 70, 73);
+}
+
+.right-content .info .add {
+	float: left;
+	margin-top: 15px;
+	margin-left: 25px;
+	font-size: 15px;
+	background: rgb(94, 185, 94);
+	border: none;
+	cursor: pointer;
+	margin-bottom: 15px;
+}
+
+.right-content .info .add a {
+	background: rgb(94, 185, 94);
+	padding: 7px 14px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.right-content .info .add a:hover {
+	background: rgb(74, 170, 74);
+}
+
+.right-content .info .search {
+	margin-top: 12px;
+	float: right;
+}
+
+.right-content .info .search .type {
+	height: 35px;
+	width: 150px;
+	padding-left: 5px;
+	color: #fff;
+	background-color: rgb(75, 83, 87);
+	border: 1px solid rgb(111, 117, 121);
+	margin-right: 20px;
+}
+
+.right-content .info .search-box {
+	margin-right: 25px;
+	float: right;
+}
+
+.right-content .info .search .search-box input {
+	height: 33px;
+	border: 1px solid rgb(111, 117, 121);
+	border-right: none;
+	background-color: rgb(75, 83, 87);
+	color: #fff;
+	vertical-align: middle;
+	width: 250px;
+}
+
+.right-content .info .search .search-box button {
+	margin-left: -5.5px;
+	height: 35px;
+	border: 1px solid rgb(111, 117, 121);
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+	background: rgb(94, 185, 94);
+	color: #fff;
+}
+
+.right-content .info .search .search-box button:hover {
+	background: rgb(74, 170, 74);
+}
+
+.right-content .info .list {
+	width: 96.5%;
+	height: 80%;
+	padding-right: 5px;
+	color: #fff;
+	font-size: 14px;
+	margin: 0 auto;
+	margin-top: 15px;
+	text-align: center;
+}
+
+.right-content .info .list tbody tr {
+	height: 65px;
+	background-color: rgb(93, 100, 104);
+}
+
+.right-content .info .c-img {
+	width: 80px;
+	height: 80px;
+}
+
+.right-content .operation a {
+	color: #fff;
+	text-decoration: none;
+	padding-right: 10px;
+}
+
+.right-content .operation a:hover {
+	color: rgb(134, 142, 142);
+}

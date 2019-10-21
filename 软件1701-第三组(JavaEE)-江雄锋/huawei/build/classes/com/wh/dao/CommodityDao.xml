@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace表示命名空间 -->
+<mapper namespace="com.wh.dao.CommodityDao">
+	<select id="findshopAll" resultType="Commodity">
+		select * from commodity
+	</select>
+	<select id="findshopAll_admin" resultType="Commodity">
+		select * from
+		commodity
+	</select>
+	<select id="findshopHuawei_Mate" resultType="Commodity">
+		select * from
+		commodity 
+		where  type ="HUAWEI Mate"
+	</select>
+	<select id="findshopRongYao" resultType="Commodity">
+		select * from
+		commodity 
+		where  type ="荣耀"
+	</select>
+	<select id="findshopHuawei_P" resultType="Commodity">
+		select * from
+		commodity 
+		where  type ="HUAWEI P"
+	</select>
+	<select id="findshopRongyao_Changwan" resultType="Commodity">
+		select * from
+		commodity 
+		where  type ="荣耀畅玩"
+	</select>
+	<select id="findshopHuawei_nova" resultType="Commodity">
+		select * from
+		commodity 
+		where  type ="HUAWEI nova"
+	</select>
+	<select id="findshopHuawei_Changxiang" resultType="Commodity">
+		select * from
+		commodity 
+		where  type ="华为畅享"
+	</select>
+	<select id="findshopHuawei_maimang" resultType="Commodity">
+		select * from
+		commodity 
+		where  type ="HUAWEI麦芒"
+	</select>
+	<select id="findshopYidong_4G" resultType="Commodity">
+		select * from
+		commodity 
+		where  type ="移动4G+"
+	</select>
+	<select id="findshopbyId" parameterType="Integer"
+		resultType="Commodity">
+		select * from commodity
+		where id= #{id}
+	</select>
+	<!-- 修改 -->
+	<update id="doUpdate" parameterType="Commodity">
+		update commodity
+		<set>
+			<if test="type !=null and type !=''">
+				type=#{type},
+			</if>
+			<if test="name !=null and name !=''">
+				name=#{name},
+			</if>
+			<if test="price !=null and price !=''">
+				price=#{price},
+			</if>
+			<if test="img !=null and img !=''">
+				img=#{img}
+			</if>
+		</set>
+		where id= #{id}
+	</update>
+
+	<!-- 添加商品 -->
+	<insert id="addCommodity" parameterType="Commodity">
+		insert into
+		commodity(type,name,price,img)
+		values(#{type},#{name},#{price},#{img})
+	</insert>
+
+	<!-- 删除商品 -->
+	<delete id="deleteCommodity" parameterType="Commodity">
+		delete from commodity
+		where id=#{id}
+	</delete>
+
+	<!--根据专业，名称查询商品信息列表 -->
+	<select id="findCommoditybyTwo" parameterType="Commodity"
+		resultType="Commodity">
+		select * from commodity
+		<trim prefix="where" prefixOverrides="and">
+			<if test="name !=null and name !=''">
+				and name like concat('%',#{name}, '%')
+			</if>
+			<if test="type !=null and type !=''">
+				and type= #{type}
+			</if>
+		</trim>
+	</select>
+	
+</mapper>

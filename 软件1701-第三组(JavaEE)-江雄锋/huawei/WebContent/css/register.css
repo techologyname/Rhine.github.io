@@ -1,0 +1,138 @@
+body {
+	background-color: #DDDDDD;
+}
+/*¶¥¶Ëµ¼º½À¸*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.header-top {
+	width: 100%;
+	height: 30px;
+	background: #f9f9f9;
+	border-bottom: 1px solid #eeeeee;
+	font-size: 12px;
+}
+
+.header-top .header-nav {
+	width: 1200px;
+	height: 30px;
+	margin: 0 auto;
+}
+
+.header-top .header-nav li {
+	line-height: 30px;
+	margin-right: 20px;
+}
+
+.header-top .header-nav li a {
+	color: #666666;
+}
+
+.header-top .header-nav .fl li {
+	float: left;
+}
+
+.header-top .header-nav .fr li {
+	float: left;
+	position: relative;
+}
+
+.header-top .header-nav .fr li ul {
+	position: absolute;
+	left: -1px;
+	width: 80px;
+	background: #ffffff;
+	border-top: 1px solid #ffffff;
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	padding-right: 0px;
+}
+
+.header-top .header-nav .fr li ul li {
+	margin-left: 15px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.down {
+	background: #ffffff;
+	border: 1px solid #eeeeee;
+	text-align: left;
+	z-index: 1;
+}
+
+.down li {
+	width: 50px;
+}
+
+.header-top .header-nav a:hover {
+	color: #CA151D;
+}
+
+.arrow-up {
+	display: inline-block;
+	vertical-align: top;
+	border-bottom: 4px solid #000000;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: "";
+	margin-top: 5px;
+}
+
+.arrow-down {
+	display: inline-block;
+	vertical-align: top;
+	border-top: 4px solid #000000;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: "";
+	margin-left: 3px;
+	margin-top: 13px;
+}
+
+.header {
+	background-color: #fff;
+	height: 70px;
+	margin-bottom: 30px;
+}
+
+.header img {
+	margin-left: 300px;
+	margin-top: 20px;
+}
+
+.logo {
+	float: right;
+	color: white;
+	margin-right: 800px;
+	margin-top: 27px;
+}
+
+#container {
+	width: 900px;
+	background-color: white;
+	margin: 0 auto;
+	padding: 0;
+	height: 600px;
+}
+
+p {
+	border: 1px solid #AAAAAA;
+	padding: 10px;
+	border-radius: 18px;
+}
+
+.biaodan {
+	padding: 50px;
+}
+
+.footer {
+	color: #777777;
+	text-align: center;
+	font-family: "Î¢ÈíÑÅºÚ";
+	font-size: 12px;
+	padding: 10px;
+}

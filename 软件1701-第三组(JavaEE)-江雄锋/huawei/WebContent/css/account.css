@@ -1,0 +1,188 @@
+.header-top {
+	width: 100%;
+	height: 30px;
+	background: #f9f9f9;
+	border-bottom: 1px solid #eeeeee;
+	font-size: 12px;
+}
+
+.header-top .header-nav {
+	width: 1200px;
+	height: 30px;
+	margin: 0 auto;
+}
+
+.header-top .header-nav li {
+	line-height: 30px;
+	margin-right: 20px;
+}
+
+.header-top .header-nav li a {
+	color: #666666;
+}
+
+.header-top .header-nav .fl li {
+	float: left;
+}
+
+.header-top .header-nav .fr li {
+	float: left;
+	position: relative;
+}
+
+.header-top .header-nav .fr li ul {
+	position: absolute;
+	left: -1px;
+	width: 80px;
+	background: #ffffff;
+	border-top: 1px solid #ffffff;
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	padding-right: 0px;
+}
+
+.header-top .header-nav .fr li ul li {
+	margin-left: 15px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.down {
+	background: #ffffff;
+	border: 1px solid #eeeeee;
+	text-align: left;
+	z-index: 1;
+	position: relative;
+}
+
+.down li {
+	width: 50px;
+	position: absolute;
+	left: -40px;
+}
+
+.header-top .header-nav a:hover {
+	color: #CA151D;
+}
+
+.arrow-up {
+	display: inline-block;
+	vertical-align: top;
+	border-bottom: 4px solid #000000;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	margin-top: 5px;
+}
+
+.arrow-down {
+	display: inline-block;
+	vertical-align: top;
+	border-top: 4px solid #000000;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	margin-left: 3px;
+	margin-top: 13px;
+}
+
+.middle-nav {
+	background-color: #fff;
+	width: 1200px;
+	margin: 0 auto;
+	height: 70px;
+}
+
+.middle-nav .logo {
+	margin-left: 42px;
+	text-align: left;
+	background-color: #fff;
+	margin-top: 15px;
+}
+
+.middle-nav span {
+	margin-left: 25px;
+	font-size: 24px;
+	color: #000;
+}
+
+.kuang {
+	position: relative;
+	height: 200px;
+	margin: 0 auto;
+	background-color: #f9f9f9;
+	padding-left: 20px;
+	padding-top: 1px;
+	width: 1110px;
+	height: 200px;
+}
+
+.kuang a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #555;
+}
+
+.kuang .add {
+	background-color: #F2F2F2;
+	padding: 4px 10px;
+	border: 1px solid #A4A4A4;
+	position: absolute;
+	font-size: 14px;
+	top: 24px;
+	left: 140px;
+	top: 25px;
+}
+.kuang .update {
+	background-color: #F2F2F2;
+	padding: 4px 10px;
+	position: absolute;
+	border: 1px solid #A4A4A4;
+	font-size: 14px;
+	top: 24px;
+	left: 200px;
+}
+.kuang .delete {
+	background-color: #F2F2F2;
+	padding: 4px 10px;
+	position: absolute;
+	border: 1px solid #A4A4A4;
+	font-size: 14px;
+	top: 24px;
+	left: 260px;
+}
+
+.address-info {
+	font-size: 14px;
+}
+
+.address-info label {
+	margin-top: 5px;
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.address {
+	color: #000000;
+	padding: 50px 150px;
+	border: 1px solid #777777;
+}
+
+.cartItemNum {
+	margin-top: 70px;
+}
+
+.price {
+	margin-top: 75px;
+}
+
+.modal-footer button a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#totalMoney {
+	font-size: 15px;
+}

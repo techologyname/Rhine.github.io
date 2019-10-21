@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace表示命名空间 -->
+<mapper namespace="com.wh.dao.AdminDao">
+	<!-- 登陆 -->
+	<select id="doLogin_admin" parameterType="Admin" resultType="Integer">
+		SELECT
+		COUNT(*) FROM admin WHERE uname=#{uname} AND password=#{password}
+	</select>
+
+	<!-- 注册 -->
+	<insert id="doRegister" parameterType="Admin">
+		insert into
+		admin(uname,password)
+		values(#{uname},#{password})
+	</insert>
+
+	<select id="findAdmin" resultType="Admin">
+		select * from admin
+	</select>
+
+	<select id="findAdminbyId" parameterType="Integer"
+		resultType="Admin">
+		select * from admin
+		where id= #{id}
+	</select>
+
+	<!-- 修改 -->
+	<update id="doUpdate_admin" parameterType="Admin">
+		update admin
+		<set>
+			<if test="uname !=null and uname !=''">
+				uname=#{uname},
+			</if>
+			<if test="password !=null and password !=''">
+				password=#{password},
+			</if>
+		</set>
+		where id= #{id}
+	</update>
+
+	<!-- 添加商品 -->
+	<insert id="addAdmin" parameterType="Admin">
+		insert into
+		admin(uname,password)
+		values(#{uname},#{password})
+	</insert>
+
+	<!-- 删除商品 -->
+	<delete id="deleteAdmin" parameterType="Admin">
+		delete from admin
+		where
+		id=#{id}
+	</delete>
+
+	<select id="findAdminbyUname" parameterType="Admin"
+		resultType="Admin">
+		select * from admin
+		<trim prefix="where" prefixOverrides="and">
+			<if test="uname !=null and uname !=''">
+				and uname like concat('%',#{uname}, '%')
+			</if>
+		</trim>
+	</select>
+
+</mapper>
